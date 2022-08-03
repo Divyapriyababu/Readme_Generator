@@ -32,11 +32,26 @@ const questions = [
         type: "input",
         name: "test",
         message: "Enter your project test instructions:"
+    },
+    {
+        type: "input",
+        name: "questions",
+        message: "Enter frequently asked questions:"
+    },
+    {
+        type: "input",
+        name: "github",
+        message: "Enter your github user profile for contact:"
+    },
+    {
+        type: "input",
+        name: "email",
+        message: "Enter your email address for contact:"
     }
 ];
 
 function writeToFile(fileName, data) {
-    fs.writeFile(fileName, data , (err) =>
+    fs.writeFile(fileName, data, (err) =>
       err ? console.log(err) : console.log('Success!')
     );
 }
