@@ -24,6 +24,21 @@ const questions = [
         message: "What is the usage of your project?"
     },
     {
+        type: "list",
+        name: "license",
+        message: "Chose the appropriate license for this project: ",
+        choices: [
+            "Apache_2.0",
+            "Boost_1.0",
+            "BSD_3",
+            "BSD_2",
+            "CC0_1.0",
+            "EPL_1.0",
+            "MIT",
+            "MPL_2.0"
+        ]
+    },
+    {
         type: "input",
         name: "contributing",
         message: "Who are the contributors of your project?"
