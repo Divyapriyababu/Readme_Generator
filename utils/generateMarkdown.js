@@ -13,7 +13,7 @@ function renderLicenseLink(license) {
   if (license == '') {
     return ``;
   }
-  return `![License](` + licenses[license]['link'] + `)`
+  return `[${license}](` + licenses[license]['link'] + `)`
 }
 
 // If there is no license, return an empty string
@@ -21,7 +21,7 @@ function renderLicenseSection(license) {
   if (license == '') {
     return ``;
   }
-  return `This project is licensed under ${renderLicenseLink(license)}`;
+  return `This project is licensed under ${renderLicenseLink(license)} license`;
 }
 
 function renderTableOfContentsSection() {
