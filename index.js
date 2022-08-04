@@ -75,7 +75,7 @@ function init() {
     inquirer
     .prompt(questions)
     .then((data) => {
-        writeToFile("divya.md",generateMarkdown(data));
+        writeToFile("generatedREADME.md",generateMarkdown(data));
     });
 }
 
