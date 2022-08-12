@@ -24,6 +24,7 @@ function renderLicenseSection(license) {
   return `This project is licensed under ${renderLicenseLink(license)} license`;
 }
 
+// Generate tables of content section for the Readme file
 function renderTableOfContentsSection() {
   return `## Table of Contents\n` +
   `- [Installation](#installation)\n` +
@@ -34,6 +35,7 @@ function renderTableOfContentsSection() {
   `- [Questions](#questions)\n`;
 }
 
+// Follow Readme conventions to generate a markdown text
 function generateMarkdown(data) {
   return `# ${data.title} ` + renderLicenseBadge(data.license) +
   `\n## Description\n${data.description}\n` +

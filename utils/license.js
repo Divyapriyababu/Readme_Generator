@@ -1,3 +1,4 @@
+// Licenses json containing link and image for each license
 const licenses = {
     "Apache_2.0" : {
         "link": "https://opensource.org/licenses/Apache-2.0",
